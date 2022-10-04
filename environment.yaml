@@ -1,0 +1,32 @@
+name: fastai-generic
+channels:
+- fastai
+- pytorch
+- defaults
+- conda-forge
+dependencies:
+- fire # used by notebook2script
+- flask
+- ipywidgets
+- jupyter
+- jupyter_contrib_nbextensions
+- pytorch>=1.7.0
+- torchvision>=0.8
+- matplotlib
+- pandas
+- requests
+- pyyaml
+# remove this for debugging and use symbolic links to fastai's cloned repositories locally
+- fastai
+- pillow>=6.0.0
+- python>=3.6
+- pip
+- seaborn
+- scikit-learn
+- scipy
+- spacy
+- umap-learn
+- pip:
+  - sklearn
+  - tqdm
+  - duckduckgo-search
